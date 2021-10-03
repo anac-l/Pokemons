@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Pokemon</title>
+</head>
+
+<body>
+    
+
+    <section id="cadastro-pokemon">
+        <header>
+            <h1>Cadastrar Pokemons</h1>
+        </header>
+        <form oninput="x.value=parseInt(taxa_captura.value)">
+            <fieldset>
+                <legend>Pokemon</legend>
+
+                <label for="numero">Identificador</label>
+                <input type="text" name="numero" id="numero" value="" placeholder="Número do Pokémon"><br><br>
+
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" value="" placeholder="Nome do Pokémon"><br><br>
+
+                <label for="tipos1">Tipos</label>
+                <select name="tipos1" id="tipos1">
+                    <option value="" disabled selected>Selecione o tipo</option>
+                    <option value="aco">Aço</option>
+                    <option value="agua">Água</option>
+                    <option value="eletrico">Elétrico</option>
+                    <option value="fada">Fada</option>
+                    <option value="fantasma">Fantasma</option>
+                    <option value="fogo">Fogo</option>
+                    <option value="gelo">Gelo</option>
+                    <option value="inseto">Inseto</option>
+                    <option value="lutador">Lutador</option>
+                    <option value="normal">Normal</option>
+                    <option value="pedra">Pedra</option>
+                    <option value="planta">Planta</option>
+                    <option value="psiquico">Psíquico</option>
+                    <option value="sombrio">Sombrio</option>
+                    <option value="terra">Terra</option>
+                    <option value="venenoso">Venenoso</option>
+                    <option value="voador">Voador</option>
+                </select>&emsp;
+
+                <select name="tipos2" id="tipos2">
+                    <option value="" disabled selected>(Opcional)Selecione o tipo</option>
+                    <option value="aco">Aço</option>
+                    <option value="agua">Água</option>
+                    <option value="eletrico">Elétrico</option>
+                    <option value="fada">Fada</option>
+                    <option value="fantasma">Fantasma</option>
+                    <option value="fogo">Fogo</option>
+                    <option value="gelo">Gelo</option>
+                    <option value="inseto">Inseto</option>
+                    <option value="lutador">Lutador</option>
+                    <option value="normal">Normal</option>
+                    <option value="pedra">Pedra</option>
+                    <option value="planta">Planta</option>
+                    <option value="psiquico">Psíquico</option>
+                    <option value="sombrio">Sombrio</option>
+                    <option value="terra">Terra</option>
+                    <option value="venenoso">Venenoso</option>
+                    <option value="voador">Voador</option>
+                </select><br><br>
+
+                <label for="total">Total</label>
+                <input type="text" name="total" id="total" value="" placeholder="Soma de estatísticas básicas" size="25"><br><br>
+
+                <label for="hp">HP</label>
+                <input type="number" name="hp" id="hp" min="0" max="255"><br><br>
+
+                <label for="ataque">Ataque</label>
+                <input type="number" name="ataque" id="ataque" min="0" max="255"><br><br>
+
+                <label for="defesa">Defesa</label>
+                <input type="number" name="defesa" id="defesa" min="0" max="255"><br><br>
+
+                <label for="ataque_especial">Ataque especial</label>
+                <input type="number" name="ataque_especial" id="ataque_especial" min="0" max="255"><br><br>
+
+                <label for="defesa_especial">Defesa especial</label>
+                <input type="number" name="Defesa_especial" id="defesa_especial" min="0" max="255"><br><br>
+
+                <label for="velocidade">Velocidade</label>
+                <input type="number" name="velocidade" id="velocidade" min="0" max="255"><br><br>
+                <fieldset>
+                    <legend>Geração</legend>
+                    <ul>
+                        <li>
+                            <input type="radio" name="geracao" id="primeira" checked>
+                            <label for="primeira">Primeira Geração</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="geracao" id="segunda">
+                            <label for="segunda">Segunda Geração</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="geracao" id="terceira">
+                            <label for="terceira">Terceira Geração</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="geracao" id="quarta">
+                            <label for="quarta">Quarta Geração</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="geracao" id="quinta">
+                            <label for="quinta">Quinta Geração</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="geracao" id="sexta">
+                            <label for="sexta">Sexta Geração</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="geracao" id="setima">
+                            <label for="setima">Setima Geração</label>
+                        </li>
+                    </ul>
+                </fieldset><br><br>
+
+                <fieldset>
+                    <legend>Lendário</legend>
+                    <ul>
+                        <li>
+                            <input type="radio" name="lendario" id="lendario" value="true" checked>
+                            <label for="lendario">Sim</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="lendario" id="lendario" value="false" checked>
+                            <label for="lendario">Não</label>
+                        </li>
+                    </ul>
+                </fieldset><br><br>
+
+                <label for="cor">Cor</label>
+                <input type="color" name="cor" id="cor"><br><br>
+
+                <label for="altura">Altura(m)</label>
+                <input type="number" name="altura" id="altura" min="0" max="255" step="0.01"><br><br>
+
+                <label for="peso">Peso(kg)</label>
+                <input type="number" name="peso" id="peso" min="0" max="255" step="0.001"><br><br>
+
+                <label for="taxa_captura">Taxa de captura</label>
+                <input type="range" name="taxa_captura" id="taxa_captura" min="0" max="255">
+                <output for="taxa_captura" name="x"></output><br><br>
+
+                <button type="submit" id="enviar">Enviar</button>
+            </fieldset>
+        </form>
+    </section>
+</body>
